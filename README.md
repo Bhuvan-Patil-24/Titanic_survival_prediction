@@ -37,28 +37,31 @@ Several machine learning models were tested and evaluated:
 
 ## Repository Structure
 ```
-├── data/
-│   ├── train.csv          # Training dataset
-│   └── test.csv           # Test dataset
-├── notebooks/
-│   ├── exploratory_data_analysis.ipynb  # Initial data exploration
-│   ├── feature_engineering.ipynb        # Feature creation and transformation
-│   └── model_comparison.ipynb           # Model training and evaluation
-├── src/
-│   ├── data_preprocessing.py            # Data cleaning and preparation
-│   ├── feature_extraction.py            # Feature engineering functions
-│   └── model_evaluation.py              # Model training and testing
-├── images/
-│   └── model_comparison.png             # Performance visualization
-├── requirements.txt                     # Dependencies
-└── README.md
+├── .ipynb_checkpoints/                 # Jupyter Notebook checkpoints
+├── images/                              # Visualizations
+│   ├── confusion_matrix.png
+│   ├── feature_importance.png
+│   ├── model_comparison.png
+│   ├── roc_curves.png
+├── models/                              # Trained models and preprocessor
+│   ├── preprocessor.pkl
+│   ├── titanic_survival_model.pkl
+├── Project report/                      # Reports related to the project
+│   ├── ML_TAE_Report-1.pdf
+│   ├── ML_TAE_Report-2.pdf
+├── titanic_data/                        # Dataset directory
+│   ├── titanic.csv
+├── .gitignore                           # Git ignore file
+├── README.md                            # Project documentation
+├── titanic_5_algo.ipynb                 # Notebook for comparing five algorithms
+├── titanic_survival_RF.ipynb            # Random Forest survival prediction notebook
 ```
 
 ## Setup and Installation
 
 1. **Clone this repository:**
 ```sh
-   git clone https://github.com/yourusername/titanic-survival-prediction.git
+   git clone https://github.com/Bhuvan-Patil-24/Titanic_survival_prediction.git
 ```
 
 2. **Navigate to the project directory:**
@@ -71,19 +74,14 @@ Several machine learning models were tested and evaluated:
    pip install -r requirements.txt
 ```
 
-4. **Run the Jupyter notebooks in order or execute the main script:**
-```sh
-   python src/main.py
-```
+4. **Run the Jupyter notebooks in order**
+
 
 ## Future Improvements
 - Implement ensemble methods combining the strengths of multiple models.
 - Further feature engineering to extract additional insights.
 - Hyperparameter optimization for the best-performing models.
 - Survival probability analysis for different passenger profiles.
-
-## License
-This project is licensed under the **MIT License** - see the `LICENSE` file for details.
 
 ## Acknowledgments
 - **Dataset:** Provided by Kaggle
