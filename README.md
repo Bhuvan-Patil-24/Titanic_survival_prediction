@@ -53,6 +53,7 @@ Several machine learning models were tested and evaluated:
 │   ├── titanic.csv
 ├── .gitignore                           # Git ignore file
 ├── README.md                            # Project documentation
+├── requirements.txt
 ├── titanic_5_algo.ipynb                 # Notebook for comparing five algorithms
 ├── titanic_survival_RF.ipynb            # Random Forest survival prediction notebook
 ```
